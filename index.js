@@ -1,8 +1,8 @@
 const config = require('./common/config/env.config.js');
-
+const dotenv = require('dotenv');
 const express = require('express');
 const app = express();
-
+dotenv.config();
 const AuthorizationRouter = require('./authorization/routes.config');
 const UsersRouter = require('./users/routes.config');
 
